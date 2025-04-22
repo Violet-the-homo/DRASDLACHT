@@ -1,0 +1,66 @@
+body {
+    background-color: #202020;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    display: flex  ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.Poster {
+
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    z-index:    2;
+  }
+
+.BG {
+    background-image: url(images/Harkonenpropogandaposter-ezgif.com-webp-to-jpg-converter.jpg);
+    background-size: auto;
+    background-repeat: repeat;
+    overflow: hidden;
+    position: fixed;
+    top: 0%;
+    width: 500%;
+    height: 	100%;
+    text-align: center;
+    animation: slide 160s linear infinite;
+    z-index: 0;
+  }
+
+  .Filter-Blur {
+    background: rgba(37, 37, 37, 0.445);
+    backdrop-filter: blur(10px);
+    position: fixed  ;
+    height: 100%;
+    width: 500%;
+
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-5076px, 0, 0); /* The image width */
+    }
+  }
+
+
+  @font-face {
+    font-family: Harkonnen;
+    src: url(Fonts/HarkonnenMentat-Regular.otf);
+  }
+  
+  h1 {
+    font-family: "Harkonnen" ;
+    text-align: center;
+    position: fixed  ;
+    top: 0;
+    z-index: 1;
+}
+  
